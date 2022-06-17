@@ -135,11 +135,23 @@ function Dashboard() {
               </p>
               <h2 className="text-white ">Project Description</h2>
               <p className="text-white-75 mb-4">
-                Our project Is an Artificial Intelligent system that Will help
-                doctors and lab technician in detecting malaria parasites in
-                blood samples taken from blood streams of patients{" "}
+                Our project is an Artificially Intelligent system that will help
+                doctors and lab technicians in detecting malaria parasites in
+                blood samples taken from blood streams of patients through the
+                use of image processing amd machine learning algorithms.{" "}
+              </p>
+              <p  className="text-white-75 mb-4">
+                The idea is to build a model that can detect cells from
+                images of multiple cells in thin blood smear on standard
+                microscope slides and classify them as either infected or
+                uninfected with early and effective testing using image
+                processing{" "}
               </p>
               <h2 className="text-white ">Project Aims & Goals</h2>
+              <p className="text-white-75 mb-4">
+                {" "}
+                Aim to provide a faster, low cost, and reliable alternative to microscopic detection of Malaria
+              </p>
               <p className="text-white-75 mb-4">
                 {" "}
                 Aim to provide an automated process for detecting malaria
@@ -219,7 +231,7 @@ function Dashboard() {
                 </div>
                 <h3 className="h4 mb-2">Miiro Henry</h3>
                 <p className="text-muted mb-0">
-                 Frontend  Devloper / Software Engineer
+                  Frontend Devloper / Software Engineer
                 </p>
                 <br></br>
                 <Button type="primary" onClick={() => handleShowH(true)}>
