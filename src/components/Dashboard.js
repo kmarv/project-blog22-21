@@ -82,15 +82,15 @@ function Dashboard() {
                   Post
                 </Link>
               </li> */}
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a
                   className=" btn btn-primary"
-                  
-                  href="#about"
+                  onClick={logout}
+                  href="#contact"
                 >
-                  Blog
+                  Logout
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
