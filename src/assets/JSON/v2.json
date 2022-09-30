@@ -1,0 +1,24 @@
+[
+  {
+    "id": 6,
+    "activity": "Final report",
+    "description ": [
+      "Participated the writing of the final Report contributing to sections like system overview, design output"
+    ]
+  },
+  {
+    "id": 7,
+    "activity": "Implementation Front End",
+    "description ": [
+      "using vuejs , designed the user interfaces used in the system",
+      "integrated all the apis form backed with the front End"
+    ]
+  },
+  {
+    "id": 8,
+    "activity": "Final Book",
+    "description": [
+      " Compiling the necessary documents for the final book to b submitted"
+    ]
+  }
+]

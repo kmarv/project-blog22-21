@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "../assets/css/style.css";
 
-import { Avatar } from "antd";
+import { Avatar, Divider } from "antd";
 import { GithubFilled } from "@ant-design/icons";
 import { Button, Card } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
@@ -10,6 +10,10 @@ import RecordH from "../assets/JSON/henry.json";
 import RecordV from "../assets/JSON/viola.json";
 import RecordC from "../assets/JSON/collin.json";
 import RecordM from "../assets/JSON/marvin.json";
+import RecordH2 from "../assets/JSON/h2.json";
+import RecordM2 from "../assets/JSON/m2.json";
+import RecordV2 from "../assets/JSON/v2.json";
+import RecordC2 from "../assets/JSON/c2.json";
 
 function Dashboard() {
   const [showV, setShowV] = useState(false);
@@ -140,17 +144,17 @@ function Dashboard() {
                 blood samples taken from blood streams of patients through the
                 use of image processing amd machine learning algorithms.{" "}
               </p>
-              <p  className="text-white-75 mb-4">
-                The idea is to build a model that can detect cells from
-                images of multiple cells in thin blood smear on standard
-                microscope slides and classify them as either infected or
-                uninfected with early and effective testing using image
-                processing{" "}
+              <p className="text-white-75 mb-4">
+                The idea is to build a model that can detect cells from images
+                of multiple cells in thin blood smear on standard microscope
+                slides and classify them as either infected or uninfected with
+                early and effective testing using image processing{" "}
               </p>
               <h2 className="text-white ">Project Aims & Goals</h2>
               <p className="text-white-75 mb-4">
                 {" "}
-                Aim to provide a faster, low cost, and reliable alternative to microscopic detection of Malaria
+                Aim to provide a faster, low cost, and reliable alternative to
+                microscopic detection of Malaria
               </p>
               <p className="text-white-75 mb-4">
                 {" "}
@@ -256,31 +260,71 @@ function Dashboard() {
               </Modal.Title>
             </Modal.Header>
             <Modal.Body style={{ display: "flex" }}>
-              {RecordH &&
-                RecordH.map((rec) => {
-                  return (
-                    <Card
-                      bg={"Primary".toLowerCase()}
-                      text={
-                        "Primary".toLowerCase() === "light" ? "dark" : "white"
-                      }
-                      style={{
-                        width: "23rem",
-                        margin: "5px",
-                        height: "fit-content",
-                      }}
-                      className="mb-2"
-                      key={rec.id}
-                    >
-                      <Card.Header>Task</Card.Header>
-                      <Card.Body>
-                        <Card.Title>{rec.activity}</Card.Title>
+              <div className="row">
+                <div className="col-md-6">
+                  <h2>Semester 1</h2>
+                  {RecordH &&
+                    RecordH.map((rec) => {
+                      return (
+                        <Card
+                          bg={"Primary".toLowerCase()}
+                          text={
+                            "Primary".toLowerCase() === "light"
+                              ? "dark"
+                              : "white"
+                          }
+                          style={{
+                            width: "23rem",
+                            margin: "5px",
+                            height: "fit-content",
+                          }}
+                          className="mb-2"
+                          key={rec.id}
+                        >
+                          <Card.Header>Task</Card.Header>
+                          <Card.Body>
+                            <Card.Title>{rec.activity}</Card.Title>
 
-                        <Card.Text>{rec["description"]}</Card.Text>
-                      </Card.Body>
-                    </Card>
-                  );
-                })}
+                            <Card.Text>{rec["description"]}</Card.Text>
+                          </Card.Body>
+                        </Card>
+                      );
+                    })}
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-md-6">
+                  <h2>Semester 2</h2>
+
+                  {RecordH2 &&
+                    RecordH2.map((rec) => {
+                      return (
+                        <Card
+                          bg={"Primary".toLowerCase()}
+                          text={
+                            "Primary".toLowerCase() === "light"
+                              ? "dark"
+                              : "white"
+                          }
+                          style={{
+                            width: "23rem",
+                            margin: "5px",
+                            height: "fit-content",
+                          }}
+                          className="mb-2"
+                          key={rec.id}
+                        >
+                          <Card.Header>Task</Card.Header>
+                          <Card.Body>
+                            <Card.Title>{rec.activity}</Card.Title>
+
+                            <Card.Text>{rec["description"]}</Card.Text>
+                          </Card.Body>
+                        </Card>
+                      );
+                    })}
+                </div>
+              </div>
             </Modal.Body>
           </Modal>
         </>
@@ -299,31 +343,70 @@ function Dashboard() {
               </Modal.Title>
             </Modal.Header>
             <Modal.Body style={{ display: "flex" }}>
-              {RecordV &&
-                RecordV.map((rec) => {
-                  return (
-                    <Card
-                      bg={"Primary".toLowerCase()}
-                      text={
-                        "Primary".toLowerCase() === "light" ? "dark" : "white"
-                      }
-                      style={{
-                        width: "23rem",
-                        margin: "5px",
-                        height: "fit-content",
-                      }}
-                      className="mb-2"
-                      key={rec.id}
-                    >
-                      <Card.Header>Task</Card.Header>
-                      <Card.Body>
-                        <Card.Title>{rec.activity}</Card.Title>
+              <div className=" row">
+                <div className="col-md-6">
+                  <h2>Semester 1</h2>
+                  {RecordV &&
+                    RecordV.map((rec) => {
+                      return (
+                        <Card
+                          bg={"Primary".toLowerCase()}
+                          text={
+                            "Primary".toLowerCase() === "light"
+                              ? "dark"
+                              : "white"
+                          }
+                          style={{
+                            width: "23rem",
+                            margin: "5px",
+                            height: "fit-content",
+                          }}
+                          className="mb-2"
+                          key={rec.id}
+                        >
+                          <Card.Header>Task</Card.Header>
+                          <Card.Body>
+                            <Card.Title>{rec.activity}</Card.Title>
 
-                        <Card.Text>{rec["description "]}</Card.Text>
-                      </Card.Body>
-                    </Card>
-                  );
-                })}
+                            <Card.Text>{rec["description "]}</Card.Text>
+                          </Card.Body>
+                        </Card>
+                      );
+                    })}
+                </div>
+              </div>
+              <div className=" row">
+                <div className="col-md-6">
+                  <h2>Semester 2</h2>
+                  {RecordV2 &&
+                    RecordV2.map((rec) => {
+                      return (
+                        <Card
+                          bg={"Primary".toLowerCase()}
+                          text={
+                            "Primary".toLowerCase() === "light"
+                              ? "dark"
+                              : "white"
+                          }
+                          style={{
+                            width: "23rem",
+                            margin: "5px",
+                            height: "fit-content",
+                          }}
+                          className="mb-2"
+                          key={rec.id}
+                        >
+                          <Card.Header>Task</Card.Header>
+                          <Card.Body>
+                            <Card.Title>{rec.activity}</Card.Title>
+
+                            <Card.Text>{rec["description "]}</Card.Text>
+                          </Card.Body>
+                        </Card>
+                      );
+                    })}
+                </div>
+              </div>
             </Modal.Body>
           </Modal>
         </>
@@ -341,31 +424,70 @@ function Dashboard() {
               </Modal.Title>
             </Modal.Header>
             <Modal.Body style={{ display: "flex" }}>
-              {RecordC &&
-                RecordC.map((rec) => {
-                  return (
-                    <Card
-                      bg={"Primary".toLowerCase()}
-                      text={
-                        "Primary".toLowerCase() === "light" ? "dark" : "white"
-                      }
-                      style={{
-                        width: "23rem",
-                        margin: "5px",
-                        height: "fit-content",
-                      }}
-                      className="mb-2"
-                      key={rec.id}
-                    >
-                      <Card.Header>Task</Card.Header>
-                      <Card.Body>
-                        <Card.Title>{rec.activity}</Card.Title>
+              <div className="row">
+                <div className="col-md-6">
+                  <h2>Semester 1</h2>
+                  {RecordC &&
+                    RecordC.map((rec) => {
+                      return (
+                        <Card
+                          bg={"Primary".toLowerCase()}
+                          text={
+                            "Primary".toLowerCase() === "light"
+                              ? "dark"
+                              : "white"
+                          }
+                          style={{
+                            width: "23rem",
+                            margin: "5px",
+                            height: "fit-content",
+                          }}
+                          className="mb-2"
+                          key={rec.id}
+                        >
+                          <Card.Header>Task</Card.Header>
+                          <Card.Body>
+                            <Card.Title>{rec.activity}</Card.Title>
 
-                        <Card.Text>{rec["description "]}</Card.Text>
-                      </Card.Body>
-                    </Card>
-                  );
-                })}
+                            <Card.Text>{rec["description "]}</Card.Text>
+                          </Card.Body>
+                        </Card>
+                      );
+                    })}
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-md-6">
+                  <h2>Semester 2</h2>
+                  {RecordC2 &&
+                    RecordC2.map((rec) => {
+                      return (
+                        <Card
+                          bg={"Primary".toLowerCase()}
+                          text={
+                            "Primary".toLowerCase() === "light"
+                              ? "dark"
+                              : "white"
+                          }
+                          style={{
+                            width: "23rem",
+                            margin: "5px",
+                            height: "fit-content",
+                          }}
+                          className="mb-2"
+                          key={rec.id}
+                        >
+                          <Card.Header>Task</Card.Header>
+                          <Card.Body>
+                            <Card.Title>{rec.activity}</Card.Title>
+
+                            <Card.Text>{rec["description "]}</Card.Text>
+                          </Card.Body>
+                        </Card>
+                      );
+                    })}
+                </div>
+              </div>
             </Modal.Body>
           </Modal>
         </>
@@ -383,31 +505,70 @@ function Dashboard() {
               </Modal.Title>
             </Modal.Header>
             <Modal.Body style={{ display: "flex" }}>
-              {RecordM &&
-                RecordM.map((rec) => {
-                  return (
-                    <Card
-                      bg={"Primary".toLowerCase()}
-                      text={
-                        "Primary".toLowerCase() === "light" ? "dark" : "white"
-                      }
-                      style={{
-                        width: "23rem",
-                        margin: "5px",
-                        height: "fit-content",
-                      }}
-                      className="mb-2"
-                      key={rec.id}
-                    >
-                      <Card.Header>Task</Card.Header>
-                      <Card.Body>
-                        <Card.Title>{rec.activity}</Card.Title>
+              <div className="row">
+                <div className="col-md-6">
+                  <h2>Semester 1</h2>
+                  {RecordM &&
+                    RecordM.map((rec) => {
+                      return (
+                        <Card
+                          bg={"Primary".toLowerCase()}
+                          text={
+                            "Primary".toLowerCase() === "light"
+                              ? "dark"
+                              : "white"
+                          }
+                          style={{
+                            width: "23rem",
+                            margin: "5px",
+                            height: "fit-content",
+                          }}
+                          className="mb-2"
+                          key={rec.id}
+                        >
+                          <Card.Header>Task</Card.Header>
+                          <Card.Body>
+                            <Card.Title>{rec.activity}</Card.Title>
 
-                        <Card.Text>{rec["description "]}</Card.Text>
-                      </Card.Body>
-                    </Card>
-                  );
-                })}
+                            <Card.Text>{rec["description "]}</Card.Text>
+                          </Card.Body>
+                        </Card>
+                      );
+                    })}
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-md-6">
+                  <h2>Semester 2</h2>
+                  {RecordM2 &&
+                    RecordM2.map((rec) => {
+                      return (
+                        <Card
+                          bg={"Primary".toLowerCase()}
+                          text={
+                            "Primary".toLowerCase() === "light"
+                              ? "dark"
+                              : "white"
+                          }
+                          style={{
+                            width: "23rem",
+                            margin: "5px",
+                            height: "fit-content",
+                          }}
+                          className="mb-2"
+                          key={rec.id}
+                        >
+                          <Card.Header>Task</Card.Header>
+                          <Card.Body>
+                            <Card.Title>{rec.activity}</Card.Title>
+
+                            <Card.Text>{rec["description "]}</Card.Text>
+                          </Card.Body>
+                        </Card>
+                      );
+                    })}
+                </div>
+              </div>
             </Modal.Body>
           </Modal>
         </>

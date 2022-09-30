@@ -1,0 +1,25 @@
+[
+    {
+        "id":6,
+        "activity":"Final report",
+        "description ":[
+          " Participated the writing of the final Report contributing to sections like inspecting and testing,  performance, servicing, maintenance and phase out, installation and system acceptance test"
+        ]
+      },
+      {
+        "id":7,
+        "activity":"Updating blog",
+        "description ":[
+          "updated the blog with activities for sem 2 for all the group memebers"
+        ]
+      },
+      {
+        "id":8,
+        "activity":"Implementation",
+        "description ":[
+          "Participated in trainig the model",
+          "intergating the model with backend i.e providing what data will be processed and stored by the backend",
+          "Performed testing pahse to check if the requirements have been met by the system"
+        ]
+      }
+]

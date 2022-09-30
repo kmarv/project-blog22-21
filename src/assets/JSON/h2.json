@@ -1,0 +1,25 @@
+[{
+    "id":6,
+    "activity":"Design Document",
+    "description":[
+      "Took part in the writing of the design Document for the project.",
+      "Wrote sections like system overview, component design,  human interfaces design including drawing the necessary diagrams"
+
+    ]
+  },
+  {
+    "id":7,
+    "activity":"Implemenation Backend",
+    "description":[
+      " Developed the backend that will interact with the ai model generated.",
+      "used python for the development of the backend",
+      "structuring of the dtatbase to store system information and creating APIs for be used in frontend"
+
+    ]
+  },{
+    "id":8,
+    "activity":"Final Book",
+    "description":[
+        " Compiling the necessary documents for the final book to b submitted"
+    ]
+  }]
